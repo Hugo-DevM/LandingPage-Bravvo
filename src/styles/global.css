@@ -1,44 +1,45 @@
 :root {
   /* Base */
-  --bg: 0 0% 98%;
-  --text: 355 60% 12%;
+  --bg: #160507;
+  --text: #fafafa;
 
-  /* Brand */
-  --brand-900: 355 70% 10%; /* Hero / headers */
-  --brand-800: 355 70% 22%; /* Primary */
-  --brand-700: 355 65% 32%;
-  --brand-600: 355 80% 38%;
-  --brand-500: 355 75% 48%;
-  --brand-400: 355 85% 55%; /* Glow / hover */
+  /* Brand – Burgundy / Wine */
+  --brand-900: #2b080d;
+  --brand-800: #60111e;
+  --brand-700: #8a1d2f;
+  --brand-600: #b31533;
+  --brand-500: #d12b4a;
+  --brand-400: #eb3b60;
 
   /* UI */
-  --surface: 0 0% 100%;
-  --surface-muted: 355 20% 94%;
-  --border: 355 20% 88%;
-  --muted: 355 15% 92%;
-  --muted-text: 355 20% 45%;
+  --surface: #ffffff;
+  --surface-muted: #f4edee;
+  --border: #e6dadb;
+  --muted: #efe8e9;
+  --muted-text: #8c5f66;
 
   /* State */
-  --success: 142 71% 45%;
-  --warning: 38 92% 50%;
-  --error: 0 84% 60%;
+  --success: #2fbf71;
+  --warning: #f5a300;
+  --error: #f04747;
 
-  /* Radius */
   --radius: 0.75rem;
+
+  --color-btn: #cf1323;
 }
 
 /* Dark mode */
 .dark {
-  --bg: 355 70% 6%;
-  --text: 0 0% 98%;
+  --bg: #160507;
+  --text: #fafafa;
 
-  --surface: 355 65% 10%;
-  --surface-muted: 355 50% 16%;
-  --border: 355 50% 18%;
-  --muted-text: 355 15% 65%;
+  --surface: #2a0d12;
+  --surface-muted: #3b141a;
+  --border: #4a1a21;
+  --muted-text: #b89a9e;
 
-  --brand-800: 355 80% 50%;
-  --brand-400: 355 85% 60%;
+  --brand-800: #e23a5b;
+  --brand-400: #f05c78;
 }
 
 body {
