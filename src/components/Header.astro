@@ -1,0 +1,21 @@
+---
+import style from "../styles/components/header.module.css";
+---
+
+<header class={style.header}>
+  <div class={style.contenHeader}>
+    <a class={style.contentLogo} href="">
+      <img class={style.logo} src="/bravvo.webp" alt="Bravvo Consulting" />
+      <span class={style.textLogo}
+        >Bravvo<span class={style.pointLogo}>.</span>
+      </span>
+    </a>
+    <nav class={style.navbar}>
+      <a class={style.navbarLinks} href="#services">Servicios</a>
+      <a class={style.navbarLinks} href="#method">Método</a>
+      <a class={style.navbarLinks} href="#results">Resultados</a>
+      <a class={style.navbarLinks} href="#testimonials">Testimonios</a>
+    </nav>
+    <a class={style.btnHeader}>Agenda tu diagnóstico</a>
+  </div>
+</header>
