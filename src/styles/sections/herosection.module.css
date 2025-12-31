@@ -119,3 +119,109 @@
   width: 100%;
   margin-top: auto;
 }
+
+@media (max-width: 1024px) {
+  .contentHeroSection {
+    padding: 2rem 1.5rem 0;
+  }
+
+  .heroTitle {
+    font-size: 42px;
+  }
+
+  .heroSubtitle {
+    font-size: 20px;
+  }
+
+  .contentHeroButtons {
+    gap: 1.5rem;
+    margin: 3rem 0;
+  }
+
+  .btnfree,
+  .btnSeeFunction {
+    padding: 0.85rem 1.5rem;
+    font-size: 18px;
+  }
+
+  .contentHeroCards {
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 13px;
+    padding: 0 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentHeroSection {
+    padding: 1.5rem 1rem 0;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 0 12px;
+  }
+
+  .contentHeroTitle {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .heroTitle {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .contentHeroSubtitle {
+    max-width: 100%;
+    padding: 0 1rem;
+    margin-top: 1rem;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .contentHeroButtons {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 2.5rem 0;
+    width: 100%;
+  }
+
+  .btnfree,
+  .btnSeeFunction {
+    width: 70%;
+    padding: 0.9rem 1.5rem;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contentHeroCards {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 24px;
+  }
+
+  .heroSubtitle {
+    font-size: 14px;
+  }
+
+  .btnfree,
+  .btnSeeFunction {
+    font-size: 15px;
+    padding: 0.85rem 1.2rem;
+  }
+}
