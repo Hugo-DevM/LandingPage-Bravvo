@@ -1,11 +1,13 @@
 .heroSection {
-  background: #35090c;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: white;
   background: linear-gradient(
     90deg,
     rgba(53, 9, 12, 1) 0%,
     rgba(121, 17, 26, 1) 100%
   );
-  position: relative;
 }
 
 .contentHeroSection {
@@ -73,8 +75,6 @@
   flex-direction: row;
   gap: 2rem;
   margin: 4rem 0;
-  position: relative;
-  z-index: 1;
 }
 
 .btnfree {
@@ -116,10 +116,6 @@
   gap: 24px;
 }
 .wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  pointer-events: none;
-  z-index: 0;
+  width: 100%;
+  margin-top: auto;
 }
