@@ -1,0 +1,117 @@
+---
+import CardHero from "../components/ui/CardHero.astro";
+import style from "../styles/sections/herosection.module.css";
+
+const heroCards = [
+  {
+    icon: `<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="32"
+        height="32"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="#d61f2e"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <path d="M3 17l6 -6l4 4l8 -8" />
+        <path d="M14 7l7 0l0 7" />
+      </svg>`,
+    title: "+40%",
+    subtitle: "Aumento en productividad",
+  },
+  {
+    icon: `<!--
+tags: [people, persons, accounts]
+version: "1.7"
+unicode: "ebf2"
+category: System
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#d61f2e"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+  <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+  <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+</svg>
+`,
+    title: "+30",
+    subtitle: "PYMES transformadas",
+  },
+  {
+    icon: `<!--
+tags: [energy, power, electricity, storm, lightning, flash]
+version: "1.0"
+unicode: "ea38"
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#d61f2e"
+  stroke-width="2"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M13 3l0 7l6 0l-8 11l0 -7l-6 0l8 -11" />
+</svg>
+`,
+    title: "-60%",
+    subtitle: "Menos tareas manuales",
+  },
+];
+---
+
+<section class={style.heroSection}>
+  <div class={style.contentHeroSection}>
+    <div class={style.badge}>
+      <span class={style.point}> </span>
+      <p>Consultoría estratégica para PYMES</p>
+    </div>
+    <div class={style.contentHeroTitle}>
+      <h1 class={style.heroTitle}>
+        Tu empresa puede crecer <span class={style.heroTitleRed}>
+          sin depender de ti</span
+        > todo el tiempo
+      </h1>
+      <div class={style.contentHeroSubtitle}>
+        <span class={style.heroSubtitle}>
+          Transformamos PYMES caóticas en negocios con estructura, procesos
+          claros y resultados medibles. Sin fórmulas mágicas, con estrategia
+          real.
+        </span>
+      </div>
+    </div>
+    <div class={style.contentHeroButtons}>
+      <a class={style.btnfree} href="">Agenda tu diagnóstico gratuito</a>
+      <a class={style.btnSeeFunction} href="">Ver cómo funciona</a>
+    </div>
+
+    <div class={style.contentHeroCards}>
+      {
+        heroCards.map((c) => (
+          <CardHero icon={c.icon} title={c.title} subtitle={c.subtitle} />
+        ))
+      }
+    </div>
+  </div>
+  <div class={style.wave}>
+    <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z"
+      ></path>
+    </svg>
+  </div>
+</section>

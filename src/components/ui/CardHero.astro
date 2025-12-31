@@ -1,0 +1,12 @@
+---
+import style from "../../styles/components/ui/cardhero.module.css";
+const { icon, title, subtitle } = Astro.props;
+---
+
+<div class={style.card}>
+  <div class={style.icon} set:html={icon} />
+  <div class={style.data}>
+    <p class={style.title}>{title}</p>
+    <p class={style.subtitle}>{subtitle}</p>
+  </div>
+</div>

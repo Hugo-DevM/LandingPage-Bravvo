@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.105);
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  width: 280px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  background: #d61f2e52;
+  border-radius: 8px;
+  padding: 0.3rem;
+  width: fit-content;
+}
+
+.title {
+  color: var(--text);
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.53);
+  margin-top: 0;
+  text-wrap: wrap;
+}
