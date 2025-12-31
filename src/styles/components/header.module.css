@@ -59,6 +59,7 @@
   color: var(--text);
   font-size: 16px;
   transition: 600ms;
+  cursor: pointer;
 }
 
 .btnHeader:hover {
