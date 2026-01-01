@@ -5,6 +5,7 @@
   background-color: var(--brand-900);
   backdrop-filter: blur(1px);
   padding: 1.3rem 2rem;
+  position: relative;
 }
 
 .contenHeader {
@@ -73,6 +74,8 @@
   background: none;
   border: none;
   cursor: pointer;
+  padding: 8px;
+  z-index: 51;
 }
 
 .h {
@@ -84,9 +87,10 @@
 }
 
 .mobileMenu {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 72px;
   left: 0;
+  right: 0;
   background: var(--brand-900);
   display: flex;
   flex-direction: column;
@@ -96,12 +100,19 @@
   opacity: 0;
   pointer-events: none;
   transition: 300ms ease;
+  z-index: 999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .m {
   color: var(--text);
   text-decoration: none;
   font-size: 18px;
+  padding: 0.5rem 0;
+}
+
+.m:hover {
+  color: var(--brand-500);
 }
 
 .btnMobile {
@@ -111,12 +122,26 @@
   border-radius: 12px;
   background: var(--color-btn);
   color: var(--text);
+  text-decoration: none;
+  font-size: 16px;
 }
 
 .mobileMenu.open {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
+}
+
+.hamburger.active .h:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .h:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .h:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 @media (max-width: 1024px) {
