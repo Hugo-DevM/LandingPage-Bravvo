@@ -12,12 +12,11 @@
   --brand-400: #eb3b60;
 
   /* UI */
-  --surface: #ffffff;
-  --surface-muted: #f4edee;
-  --border: #e6dadb;
-  --muted: #efe8e9;
-  --muted-text: #8c5f66;
-
+  --color-bg: #f9e8e8;
+  --color-text-ui: #ef4444;
+  --title-text: #310c0f;
+  --subtitle-text: #8a5c60;
+  --subtitle-text-resalt: #ae1320;
   /* State */
   --success: #2fbf71;
   --warning: #f5a300;
