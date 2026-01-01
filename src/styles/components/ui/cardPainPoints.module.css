@@ -1,0 +1,35 @@
+.cardPainPoints {
+  border: 1px solid rgba(128, 128, 128, 0.288);
+  border-radius: 16px;
+  padding: 1.3rem 2rem;
+  background: #ffffff;
+}
+
+.iconPainPoints {
+  display: flex;
+  align-items: center;
+  background-color: #f0474718;
+  width: fit-content;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+
+.titlePainPoints {
+  color: var(--title-text);
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.subtitlePainPoints {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--subtitle-text);
+}
+
+/*#fac6c6*/
+
+@media (max-width: 768px) {
+  .subtitlePainPoints {
+    margin-top: 0;
+  }
+}

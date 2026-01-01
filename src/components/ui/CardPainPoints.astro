@@ -1,0 +1,10 @@
+---
+import style from "../../styles/components/ui/cardPainPoints.module.css";
+const { icon, title, subtitle } = Astro.props;
+---
+
+<div class={style.cardPainPoints}>
+  <div class={style.iconPainPoints} set:html={icon} />
+  <h3 class={style.titlePainPoints}>{title}</h3>
+  <p class={style.subtitlePainPoints}>{subtitle}</p>
+</div>
