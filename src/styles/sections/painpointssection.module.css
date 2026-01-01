@@ -1,0 +1,106 @@
+.painPoints {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.contentPainPoints {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentHPP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.badgePP {
+  background: var(--color-bg);
+  border-radius: 1000px;
+  color: var(--color-text-ui);
+  width: fit-content;
+}
+
+.badgePPText {
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+}
+
+.badgePPTitle {
+  font-size: 48px;
+  color: var(--title-text);
+  max-inline-size: 24ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.badgePPResalt {
+  color: var(--color-text-ui);
+}
+
+.badgePPSubtitle {
+  margin-top: 1.8rem;
+  font-size: 18px;
+  max-inline-size: 68ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: var(--subtitle-text);
+}
+
+.contentCPP {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 4rem 2rem;
+}
+
+.subtitlePainPoints {
+  text-align: center;
+  font-size: 18px;
+}
+
+.subtitlePainPointsResalt {
+  color: var(--subtitle-text-resalt);
+}
+
+@media (max-width: 1024px) {
+  .contentCPP {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .badgePPSubtitle {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentCPP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .badgePPTitle {
+    font-size: 32px;
+    padding: 0 1rem;
+  }
+
+  .badgePPSubtitle {
+    font-size: 16px;
+    padding: 0 1.5rem;
+  }
+
+  .subtitlePainPoints {
+    padding: 0 1.5rem;
+  }
+}

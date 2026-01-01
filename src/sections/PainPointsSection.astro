@@ -1,0 +1,40 @@
+---
+import CardPainPoints from "../components/ui/CardPainPoints.astro";
+import dataPainPoints from "../config/dataPainPoints";
+import style from "../styles/sections/painpointssection.module.css";
+---
+
+<section class={style.painPoints}>
+  <div class={style.contentPainPoints}>
+    <div class={style.contentHPP}>
+      <div class={style.badgePP}>
+        <p class={style.badgePPText}>¿Te suena familiar?</p>
+      </div>
+      <h2 class={style.badgePPTitle}>
+        Los síntomas de una PYME <span class={style.badgePPResalt}
+          >sin estructura</span
+        >
+      </h2>
+      <span class={style.badgePPSubtitle}
+        >Si tu empresa enfrenta alguno de estos desafíos, no estás solo. Son
+        señales claras de que necesitas orden antes de seguir creciendo.</span
+      >
+    </div>
+    <div class={style.contentCPP}>
+      {
+        dataPainPoints.map((p: any) => (
+          <CardPainPoints
+            icon={p.icon}
+            title={p.title}
+            subtitle={p.description}
+          />
+        ))
+      }
+    </div>
+    <span class={style.subtitlePainPoints}
+      >La buena noticia: <span class={style.subtitlePainPointsResalt}>
+        estos problemas tienen solución estructurada.</span
+      ></span
+    >
+  </div>
+</section>
