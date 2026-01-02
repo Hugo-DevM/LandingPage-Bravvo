@@ -46,6 +46,7 @@
 
 .titleMethod {
   color: var(--title-text);
+  font-size: 24px;
   margin-bottom: 0.4rem;
 }
 
