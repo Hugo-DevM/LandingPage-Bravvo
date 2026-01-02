@@ -1,0 +1,25 @@
+---
+import style from "../../styles/components/ui/cardmethod.module.css";
+
+const {
+  number,
+  icon,
+  title,
+  subtitle,
+  description,
+  outcomes = [],
+} = Astro.props;
+---
+
+<div class={style.cardMethod}>
+  <span class={style.numberMethod}>{number}</span>
+  <div class={style.contentMethod}>
+    <div class={style.iconMethod} set:html={icon} />
+    <h3 class={style.titleMethod}>{title}</h3>
+    <span class={style.subtitleMethod}>{subtitle}</span>
+    <span class={style.descriptionMethod}>{description}</span>
+    <ul class={style.listMethod}>
+      {outcomes.map((o: string) => <li>{o}</li>)}
+    </ul>
+  </div>
+</div>
