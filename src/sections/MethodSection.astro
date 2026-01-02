@@ -1,0 +1,44 @@
+---
+import CardMethod from "../components/ui/CardMethod.astro";
+import steps from "../config/dataMethod";
+import style from "../styles/sections/methodsection.module.css";
+---
+
+<section class={style.method}>
+  <div class={style.contentMethod}>
+    <div class={style.contentHM}>
+      <div class={style.badgeMethod}>
+        <p class={style.badgeMethodText}>Nuestro método</p>
+      </div>
+      <h2 class={style.badgeMethodTitle}>
+        Un camino claro hacia <span class={style.badgeMethodResalt}
+          >resultados medibles</span
+        >
+      </h2>
+      <span class={style.badgeMethodSubtitle}
+        >No improvisamos. Seguimos un framework probado que ha transformado más
+        de 150 PYMES en Latinoamérica.</span
+      >
+
+      <div class={style.line}></div>
+      <div class={style.contentMethodCards}>
+        {
+          steps.map((s) => (
+            <CardMethod
+              number={s.number}
+              icon={s.icon}
+              title={s.title}
+              subtitle={s.subtitle}
+              description={s.description}
+              outcomes={s.outcomes}
+            />
+          ))
+        }
+      </div>
+
+      <a class={style.btnCita} href="#form"
+        >Inicia con un diagnóstico gratuito</a
+      >
+    </div>
+  </div>
+</section>

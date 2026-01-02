@@ -1,0 +1,90 @@
+.method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background: #f8f5f2;
+}
+
+.contentMethod {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentHM {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.badgeMethod {
+  background: #ae132014;
+  border-radius: 1000px;
+  color: var(--subtitle-text-resalt);
+  width: fit-content;
+}
+
+.badgeMethodText {
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+}
+
+.badgeMethodTitle {
+  font-size: 48px;
+  color: var(--title-text);
+  max-inline-size: 28ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.badgeMethodResalt {
+  color: var(--subtitle-text-resalt);
+}
+
+.badgeMethodSubtitle {
+  margin-top: 1.8rem;
+  font-size: 18px;
+  max-inline-size: 70ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: var(--subtitle-text);
+}
+
+.line {
+  position: absolute;
+  z-index: 0;
+  width: 80%;
+  height: 2px;
+  background: var(--subtitle-text-resalt);
+}
+.contentMethodCards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
+
+.btnCita {
+  padding: 0.98rem 1.8rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-btn);
+  color: var(--text);
+  font-size: 20px;
+  transition: 600ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnCita:hover {
+  scale: 1.04;
+}
