@@ -1,13 +1,21 @@
 .card {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 16px;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.105);
+  padding: 1.5rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.105);
   border-radius: 16px;
   margin-bottom: 2rem;
   width: 280px;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .icon {
@@ -23,11 +31,13 @@
   color: var(--text);
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 0;
+  margin: 0;
+  line-height: 1.1;
 }
 
 .subtitle {
   color: rgba(255, 255, 255, 0.53);
-  margin-top: 0;
+  margin: 0;
   text-wrap: wrap;
+  line-height: 1.2;
 }
