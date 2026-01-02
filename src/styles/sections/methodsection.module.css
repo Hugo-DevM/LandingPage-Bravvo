@@ -88,3 +88,32 @@
 .btnCita:hover {
   scale: 1.04;
 }
+
+@media (max-width: 1024px) {
+  .contentMethodCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .badgeMethodTitle {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentMethodCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .badgeMethodTitle {
+    font-size: 32px;
+    padding: 0 1rem;
+  }
+
+  .badgeMethodSubtitle {
+    font-size: 16px;
+    padding: 0 1.5rem;
+  }
+
+  .btnCita {
+    font-size: 18px;
+    padding: 0.85rem 1.2rem;
+  }
+}
