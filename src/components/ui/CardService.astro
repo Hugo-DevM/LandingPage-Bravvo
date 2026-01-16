@@ -1,0 +1,42 @@
+---
+import style from "../../styles/components/ui/cardService.module.css";
+
+const {
+  id,
+  typeService,
+  icon,
+  title,
+  description,
+  outcomes = [],
+} = Astro.props;
+---
+
+<!-- 
+{
+  id === 2 && (
+    <div class={style.cardServiceVip}>
+      <span class={style.typeServiceServiceVip}>{typeService}</span>
+      <div class={style.contentServiceVip}>
+        <div class={style.iconServiceVip} set:html={icon} />
+        <h3 class={style.titleServiceVip}>{title}</h3>
+        <span class={style.descriptionServiceVip}>{description}</span>
+        <ul class={style.listServiceVip}>
+          {outcomes.map((o: string) => (
+            <li>{o}</li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  )
+} -->
+<div class={style.cardService}>
+  <span class={style.typeService}>{typeService}</span>
+  <div class={style.contentService}>
+    <div class={style.iconService} set:html={icon} />
+    <h3 class={style.titleService}>{title}</h3>
+    <span class={style.descriptionService}>{description}</span>
+    <ul class={style.listService}>
+      {outcomes.map((o: string) => <li>{o}</li>)}
+    </ul>
+  </div>
+</div>

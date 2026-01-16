@@ -1,0 +1,86 @@
+.cardService {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.288);
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  background: #ffffff;
+}
+
+.contentService {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.typeService {
+  position: absolute;
+  top: -1.2rem;
+  right: 1.5rem;
+
+  background-color: #b11226;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  width: fit-content;
+  height: 2.2rem;
+  border-radius: 999px;
+  padding: 0 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.iconService {
+  display: flex;
+  align-items: center;
+  background-color: #2b080d0f;
+  width: fit-content;
+  border-radius: 14px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.titleService {
+  color: var(--title-text);
+  font-size: 24px;
+  margin-bottom: 0.4rem;
+}
+
+.subtitleService {
+  color: var(--subtitle-text-resalt);
+}
+
+.descriptionService {
+  color: var(--subtitle-text);
+  margin-top: 1rem;
+}
+
+.listService {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.listService li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #5a3a3a;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.listService li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background-color: #b11226;
+  border-radius: 50%;
+}
