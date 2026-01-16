@@ -6,6 +6,18 @@
   background: #ffffff;
 }
 
+.cardServiceVip {
+  position: relative;
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  background: #35090c;
+  background: linear-gradient(
+    90deg,
+    rgba(53, 9, 12, 1) 0%,
+    rgba(121, 17, 26, 1) 100%
+  );
+}
+
 .contentService {
   display: flex;
   align-items: start;
@@ -13,6 +25,28 @@
 }
 
 .typeService {
+  position: absolute;
+  top: -1.2rem;
+  right: 1.5rem;
+
+  background-color: #5f1118d0;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9rem;
+
+  width: fit-content;
+  height: 2.2rem;
+  border-radius: 999px;
+  padding: 0 0.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.typeServiceVip {
   position: absolute;
   top: -1.2rem;
   right: 1.5rem;
@@ -44,8 +78,24 @@
   padding: 1rem;
 }
 
+.iconServiceVip {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff21;
+  width: fit-content;
+  border-radius: 14px;
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
 .titleService {
   color: var(--title-text);
+  font-size: 24px;
+  margin-bottom: 0.4rem;
+}
+
+.titleServiceVip {
+  color: var(--text);
   font-size: 24px;
   margin-bottom: 0.4rem;
 }
@@ -59,7 +109,18 @@
   margin-top: 1rem;
 }
 
+.descriptionServiceVip {
+  color: #fafafac1;
+  margin-top: 1rem;
+}
+
 .listService {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+.listServiceVip {
   list-style: none;
   padding: 0;
   margin-top: 1.5rem;
@@ -72,6 +133,26 @@
   color: #5a3a3a;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.listServiceVip li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #fafafac1;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.listServiceVip li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  width: 6px;
+  height: 6px;
+  background-color: #b11226;
+  border-radius: 50%;
 }
 
 .listService li::before {
