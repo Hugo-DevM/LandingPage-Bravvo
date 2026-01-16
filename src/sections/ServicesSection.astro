@@ -1,0 +1,39 @@
+---
+import style from "../styles/sections/servicesection.module.css";
+
+import services from "../config/dataService";
+import CardService from "../components/ui/CardService.astro";
+---
+
+<section class={style.service}>
+  <div class={style.contentService}>
+    <div class={style.contentHS}>
+      <div class={style.badgeService}>
+        <p class={style.badgeServiceText}>Nuestros servicios</p>
+      </div>
+      <h2 class={style.badgeServiceTitle}>
+        Soluciones diseñadas para <span class={style.badgeServiceResalt}
+          >PYMES reales</span
+        >
+      </h2>
+      <span class={style.badgeServiceSubtitle}
+        >No vendemos paquetes genéricos. Cada proyecto se adapta a tu realidad,
+        tu equipo y tus objetivos de negocio.</span
+      >
+      <div class={style.contentServiceCards}>
+        {
+          services.map((s) => (
+            <CardService
+              id={s.id}
+              icon={s.icon}
+              typeService={s.typeService}
+              title={s.title}
+              description={s.description}
+              outcomes={s.outcomes}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
