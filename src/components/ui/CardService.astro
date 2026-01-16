@@ -30,5 +30,11 @@ const {
     <ul class={id === 2 ? style.listServiceVip : style.listService}>
       {outcomes.map((o: string) => <li>{o}</li>)}
     </ul>
+
+    <div class={style.contentButton}>
+      <a class={id === 2 ? style.btnfreeVip : style.btnfree} href="#form"
+        >Conocer más</a
+      >
+    </div>
   </div>
 </div>

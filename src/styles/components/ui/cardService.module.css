@@ -165,3 +165,47 @@
   background-color: #b11226;
   border-radius: 50%;
 }
+
+.contentButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.btnfreeVip {
+  text-align: center;
+  width: 100%;
+  padding: 0.98rem 1.8rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--color-btn);
+  color: var(--text);
+  font-size: 20px;
+  transition: 600ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnfree {
+  border: 2px solid #5f1117;
+  text-align: center;
+  width: 100%;
+  padding: 0.98rem 1.8rem;
+  border-radius: 12px;
+  background: transparent;
+  color: var(--service-title);
+  font-size: 20px;
+  transition: 600ms;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btnfree:hover {
+  background: var(--service-title);
+  color: var(--text);
+}
+
+.btnfreeVip:hover {
+  scale: 1.04;
+}
