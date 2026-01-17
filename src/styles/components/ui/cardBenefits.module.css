@@ -1,0 +1,51 @@
+.cardBenefit {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  padding: 1.8rem 1.4rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.105);
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  width: 360px;
+}
+
+.contentIcon {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.dataBenefit {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.iconBenefit {
+  display: flex;
+  justify-content: center;
+  background: #d61f2e26;
+  border-radius: 8px;
+  padding: 0.4rem;
+  height: fit-content;
+  width: fit-content;
+}
+
+.titleBenefit {
+  color: var(--color-btn);
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.subtitleBenefit {
+  color: var(--text);
+  font-size: 22px;
+  padding: 0.5rem 0;
+  font-weight: 600;
+}
+
+.descriptionBenefit {
+  color: #fafafac1;
+  font-size: 14px;
+}
