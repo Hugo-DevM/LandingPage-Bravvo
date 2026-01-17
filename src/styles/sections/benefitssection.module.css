@@ -1,0 +1,92 @@
+.benefits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background: #35090c;
+}
+
+.contentBenefits {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentHB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.badgeBenefits {
+  background: #ae132028;
+  border-radius: 1000px;
+  color: var(--color-btn);
+  width: fit-content;
+}
+
+.badgeBenefitsText {
+  font-weight: 600;
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+}
+
+.badgeBenefitsTitle {
+  font-size: 48px;
+  color: var(--text);
+  max-inline-size: 20ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.badgeBenefitsResalt {
+  color: var(--color-btn);
+}
+
+.badgeBenefitsSubtitle {
+  margin-top: 1.8rem;
+  font-size: 18px;
+  max-inline-size: 60ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: #fafafac1;
+}
+
+.contentBenefitsCards {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .contentBenefitsCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .badgeBenefitsTitle {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contentBenefitsCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .badgeBenefitsTitle {
+    font-size: 32px;
+    padding: 0 1rem;
+  }
+
+  .badgeBenefitsSubtitle {
+    font-size: 16px;
+    padding: 0 1.5rem;
+  }
+}
