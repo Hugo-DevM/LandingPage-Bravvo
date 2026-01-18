@@ -1,0 +1,51 @@
+---
+const { id, rating, quote, highlight, avatar, name, role, company } =
+  Astro.props;
+import style from "../../styles/components/ui/cardTestimonials.module.css";
+---
+
+<div class={style.cardTestimonial}>
+  <span class={style.iconQuote}>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="#fafafa"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path
+        d="M21 10.663c0 -4.224 -4.041 -7.663 -9 -7.663s-9 3.439 -9 7.663c0 3.783 3.201 6.958 7.527 7.56c1.053 .239 .932 .644 .696 2.133c-.039 .238 -.184 .932 .777 .512c.96 -.42 5.18 -3.201 7.073 -5.48c1.304 -1.504 1.927 -3.029 1.927 -4.715v-.01z"
+      ></path>
+    </svg>
+  </span>
+  <div class={style.contentRating}>
+    {
+      Array.from({ length: rating }).map(() => (
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="#ae1320"
+        >
+          <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" />
+        </svg>
+      ))
+    }
+  </div>
+  <span class={style.textQuote}>"{quote}"</span>
+  <span class={style.textHighligth}>{highlight}</span>
+  <div class={style.line}></div>
+  <div class={style.contentUser}>
+    <img class={style.avatar} src={avatar} alt="" />
+    <div class={style.userData}>
+      <span class={style.textName}>{name}</span>
+      <span class={style.textRole}>{role}</span>
+      <span class={style.textCompany}>{company}</span>
+    </div>
+  </div>
+</div>
