@@ -88,3 +88,38 @@
   font-size: 16px;
   color: var(--subtitle-text);
 }
+
+@media (max-width: 1024px) {
+  .contentTestimonialCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .badgeTestimonialTitle {
+    padding: 0 1rem;
+  }
+
+  .contentCompanysName {
+    gap: 1rem
+  }
+}
+
+@media (max-width: 768px) {
+  .contentTestimonialCards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .badgeTestimonialTitle {
+    font-size: 32px;
+    padding: 0 1rem;
+  }
+
+  .badgeTestimonialSubtitle {
+    font-size: 16px;
+    padding: 0 1.5rem;
+  }
+
+  .contentCompanysName {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,4 @@
-.cardTestimonial{
+.cardTestimonial {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -9,7 +9,8 @@
     position: relative;
     padding: 1.5rem;
 }
-.iconQuote{
+
+.iconQuote {
     position: absolute;
     top: -1.2rem;
     right: 1.5rem;
@@ -23,19 +24,19 @@
     height: 40px;
 }
 
-.contentRating{
+.contentRating {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     gap: .3rem;
 }
 
-.textQuote{
+.textQuote {
     color: #310c0f;
     padding: 1.5rem 0;
 }
 
-.textHighligth{
+.textHighligth {
     font-weight: 600;
     padding: 0.3rem 1.2rem;
     margin: 0;
@@ -45,7 +46,7 @@
     width: fit-content;
 }
 
-.contentUser{
+.contentUser {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,37 +54,44 @@
     gap: 1rem;
 }
 
-.userData{
+.userData {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
 
-.avatar{
+.avatar {
     width: 48px;
     height: 48px;
     border-radius: 9999px;
 }
 
-.textName{
+.textName {
     color: #310c0f;
     font-weight: 600;
     font-size: 17px;
 }
 
-.textRole{
+.textRole {
     color: var(--subtitle-text);
     font-size: 14px;
 }
 
-.textCompany{
+.textCompany {
     font-size: 14px;
     font-weight: 600;
     color: var(--subtitle-text-resalt);
 }
+
 .line {
     margin: 1.5rem 0;
     width: 100%;
     height: 1px;
     background: rgba(128, 128, 128, 0.288);
+}
+
+@media (max-width: 1024px) {
+    .cardTestimonial {
+        width: 320px;
+    }
 }
