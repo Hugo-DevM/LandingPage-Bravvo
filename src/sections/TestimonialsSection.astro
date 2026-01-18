@@ -1,0 +1,46 @@
+---
+import style from "../styles/sections/testimonialssection.module.css";
+import { testimonials, companyTestimonials } from "../config/dataTestimonials";
+import CardTestimonial from "../components/ui/CardTestimonial.astro";
+---
+
+<section class={style.testimonial}>
+  <div class={style.contentTestimonial}>
+    <div class={style.contentHS}>
+      <div class={style.badgeTestimonial}>
+        <p class={style.badgeTestimonialText}>Casos de éxito</p>
+      </div>
+      <h2 class={style.badgeTestimonialTitle}>
+        Empresarios que ya <span class={style.badgeTestimonialResalt}
+          >transformaron su negocio</span
+        >
+      </h2>
+      <span class={style.badgeTestimonialSubtitle}
+        >Historias reales de dueños de PYMES que dejaron el caos atrás y ahora
+        lideran empresas ordenadas y rentables.</span
+      >
+      <div class={style.contentTestimonialCards}>
+        {
+          testimonials.map((t) => (
+            <CardTestimonial
+              id={t.id}
+              rating={t.rating}
+              quote={t.quote}
+              highlight={t.highlight}
+              avatar={t.avatar}
+              name={t.name}
+              role={t.role}
+              company={t.company}
+            />
+          ))
+        }
+      </div>
+      <span class={style.companysTitle}
+        >Empresas que confían en nuestro método</span
+      >
+      <div class={style.contentCompanysName}>
+        {companyTestimonials.map((ct) => <span>{ct}</span>)}
+      </div>
+    </div>
+  </div>
+</section>

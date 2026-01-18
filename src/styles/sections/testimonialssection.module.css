@@ -1,0 +1,90 @@
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  background: #f8f5f2;
+}
+
+.contentTestimonial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contentHS {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.badgeTestimonial {
+  background: #ae132014;
+  border-radius: 1000px;
+  color: var(--subtitle-text-resalt);
+  width: fit-content;
+  font-weight: 500;
+}
+
+.badgeTestimonialText {
+  padding: 0.3rem 1.2rem;
+  margin: 0;
+}
+
+.badgeTestimonialTitle {
+  font-size: 48px;
+  color: var(--title-text);
+  max-inline-size: 24ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+.badgeTestimonialResalt {
+  color: var(--color-btn);
+}
+
+.badgeTestimonialSubtitle {
+  margin-top: 1.8rem;
+  font-size: 18px;
+  max-inline-size: 60ch;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-align: center;
+  color: var(--subtitle-text);
+}
+
+.contentTestimonialCards {
+  max-width: 1300px;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
+
+.contentCompanysName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  gap: 5rem;
+}
+
+.contentCompanysName span {
+  font-size: 24px;
+  font-weight: 600;
+  color: #cbb8b8;
+}
+
+.companysTitle {
+  font-size: 16px;
+  color: var(--subtitle-text);
+}
