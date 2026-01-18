@@ -60,8 +60,6 @@
 
 .contentTestimonialCards {
   max-width: 1300px;
-  position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 4rem 2rem;
@@ -110,7 +108,7 @@
 
   .badgeTestimonialTitle {
     font-size: 32px;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
   }
 
   .badgeTestimonialSubtitle {
