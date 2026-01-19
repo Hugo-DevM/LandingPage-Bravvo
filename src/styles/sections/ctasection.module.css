@@ -1,0 +1,400 @@
+.cta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--text);
+}
+
+.contentCTA {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: row;
+    background: #35090c;
+    background: linear-gradient(160deg,
+            rgba(53, 9, 12, 1) 0%,
+            rgba(121, 17, 26, 1) 100%);
+    max-width: 1280px;
+    margin: 4rem 0;
+    padding: 3rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.dataCTA {
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ttileCTA {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.titleResaltCTA {
+    color: var(--color-btn)
+}
+
+.subtitleCTA {
+    color: #c8b6b8;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+.listCTA {
+    list-style: none;
+    padding: 0;
+}
+
+.listCTA li {
+    display: flex;
+    gap: 0.75rem;
+    padding: .5rem 0;
+    align-items: center;
+    color: #e8e0e1;
+}
+
+.formContentBravvo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem 3rem;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.contentFormCTA {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.288);
+    border-radius: 1rem;
+    background: rgba(255, 255, 255, 0.126);
+    box-sizing: border-box;
+}
+
+.contentHeaderCTA {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.formTitleCTA {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.iconCTA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    padding: .5rem;
+    width: fit-content;
+    background: #cf132331;
+}
+
+.dataFormCTA {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
+    flex-direction: column;
+}
+
+.titleFormCTA {
+    color: var(--text);
+    font-weight: 700;
+}
+
+.subtitleFormCTA {
+    color: #c8b6b8;
+    font-size: 14px;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 1rem;
+    box-sizing: border-box;
+}
+
+.form input {
+    font-size: 15px;
+    width: 100%;
+    height: 46px;
+    line-height: 28px;
+    padding: 0 1rem;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    outline: none;
+    background: #fafafa3e;
+    transition: .3s ease;
+    box-sizing: border-box;
+}
+
+.form input::placeholder {
+    color: #ffffff9e;
+    font-family: "Plus Jakarta Sans",
+        sans-serif;
+    ;
+}
+
+.form input:focus,
+.form input:hover {
+    outline: none;
+    border-color: #cf1323;
+}
+
+.formButton {
+    text-align: center;
+    width: 100%;
+    padding: .8rem 1.8rem;
+    border: none;
+    border-radius: 12px;
+    background: var(--color-btn);
+    color: var(--text);
+    font-size: 18px;
+    transition: 600ms;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 500ms;
+    box-sizing: border-box;
+}
+
+.formButton:hover {
+    scale: 1.02;
+}
+
+.textResponse {
+    margin-top: .8rem;
+    font-size: 14px;
+    color: #c8b6b8;
+}
+
+@media (max-width: 1024px) {
+    .contentCTA {
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .dataCTA {
+        padding: 1.5rem 2rem;
+    }
+
+    .formContentBravvo {
+        padding: 1.5rem 2rem;
+    }
+
+    .ttileCTA {
+        font-size: 36px;
+    }
+
+    .subtitleCTA {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentCTA {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin: 2rem 1rem;
+        padding: 2rem 1.5rem;
+        border-radius: 1rem;
+    }
+
+    .dataCTA {
+        padding: 1.5rem 1rem;
+        width: 100%;
+    }
+
+    .formContentBravvo {
+        padding: 1.5rem 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .contentFormCTA {
+        height: auto;
+    }
+
+    .ttileCTA {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .subtitleCTA {
+        font-size: 15px;
+    }
+
+    .formTitleCTA {
+        padding: 1.5rem;
+    }
+
+    .form {
+        margin-top: 1.5rem;
+    }
+
+    .formButton {
+        font-size: 16px;
+        padding: .75rem 1.5rem;
+    }
+
+    .listCTA li {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 640px) {
+    .contentCTA {
+        margin: 1.5rem 0.75rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .dataCTA {
+        padding: 1rem 0.75rem;
+    }
+
+    .formContentBravvo {
+        padding: 1rem 0.75rem;
+    }
+
+    .ttileCTA {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .subtitleCTA {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .formTitleCTA {
+        padding: 1.25rem;
+    }
+
+    .contentHeaderCTA {
+        gap: 0.75rem;
+    }
+
+    .iconCTA {
+        padding: 0.4rem;
+    }
+
+    .iconCTA svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .titleFormCTA {
+        font-size: 18px;
+    }
+
+    .subtitleFormCTA {
+        font-size: 13px;
+    }
+
+    .form {
+        gap: 0.875rem;
+        margin-top: 1.25rem;
+    }
+
+    .form input {
+        height: 44px;
+        font-size: 14px;
+        padding: 0 0.875rem;
+    }
+
+    .formButton {
+        font-size: 15px;
+        padding: .7rem 1.25rem;
+    }
+
+    .listCTA li {
+        padding: .4rem 0;
+        font-size: 14px;
+        gap: 0.5rem;
+    }
+
+    .listCTA li svg {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contentCTA {
+        margin: 1rem 0.5rem;
+        padding: 1.25rem 0.75rem;
+        border-radius: 0.75rem;
+    }
+
+    .dataCTA {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .formContentBravvo {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .ttileCTA {
+        font-size: 24px;
+    }
+
+    .subtitleCTA {
+        font-size: 13px;
+    }
+
+    .formTitleCTA {
+        padding: 1rem;
+    }
+
+    .contentHeaderCTA {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .form {
+        gap: 0.75rem;
+        margin-top: 1rem;
+    }
+
+    .form input {
+        height: 42px;
+        font-size: 14px;
+        padding: 0 0.75rem;
+    }
+
+    .formButton {
+        font-size: 14px;
+        padding: .65rem 1rem;
+    }
+
+    .listCTA li {
+        font-size: 13px;
+        flex-wrap: wrap;
+    }
+
+    .listCTA li svg {
+        width: 24px;
+        height: 24px;
+    }
+}
