@@ -21,6 +21,7 @@
   gap: 3px;
   text-decoration: none;
 }
+
 .logo {
   width: 48px;
   height: 48px;
@@ -69,79 +70,11 @@
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 5px;
+  font-size: 1.8rem;
   background: none;
   border: none;
+  color: var(--text);
   cursor: pointer;
-  padding: 8px;
-  z-index: 51;
-}
-
-.h {
-  width: 24px;
-  height: 2px;
-  background: var(--text);
-  border-radius: 2px;
-  transition: 300ms;
-}
-
-.mobileMenu {
-  position: fixed;
-  top: 72px;
-  left: 0;
-  right: 0;
-  background: var(--brand-900);
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 1.5rem;
-  transform: translateY(-10px);
-  opacity: 0;
-  pointer-events: none;
-  transition: 300ms ease;
-  z-index: 999;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.m {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 18px;
-  padding: 0.5rem 0;
-}
-
-.m:hover {
-  color: var(--brand-500);
-}
-
-.btnMobile {
-  margin-top: 1rem;
-  padding: 0.9rem;
-  text-align: center;
-  border-radius: 12px;
-  background: var(--color-btn);
-  color: var(--text);
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.mobileMenu.open {
-  transform: translateY(0);
-  opacity: 1;
-  pointer-events: auto;
-}
-
-.hamburger.active .h:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-
-.hamburger.active .h:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .h:nth-child(3) {
-  transform: rotate(-45deg) translate(7px, -6px);
 }
 
 @media (max-width: 1024px) {
@@ -175,15 +108,23 @@
 
 @media (max-width: 768px) {
   .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--brand-900);
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
     display: none;
+  }
+
+  .navbar.show {
+    display: flex;
   }
 
   .btnHeader {
     display: none;
-  }
-
-  .hamburger {
-    display: flex;
   }
 
   .header {
@@ -197,5 +138,9 @@
   .logo {
     width: 36px;
     height: 36px;
+  }
+
+  .hamburger {
+    display: block;
   }
 }

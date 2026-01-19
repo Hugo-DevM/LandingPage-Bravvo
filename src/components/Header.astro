@@ -10,8 +10,8 @@ import style from "../styles/components/header.module.css";
         Bravvo<span class={style.pointLogo}>.</span>
       </span>
     </a>
-
-    <nav class={style.navbar}>
+    <button class={style.hamburger} id="hamburger"> ☰ </button>
+    <nav class={style.navbar} id="navbar">
       <a class={style.navbarLinks} href="#services">Servicios</a>
       <a class={style.navbarLinks} href="#method">Método</a>
       <a class={style.navbarLinks} href="#results">Resultados</a>
@@ -19,28 +19,7 @@ import style from "../styles/components/header.module.css";
     </nav>
 
     <a class={style.btnHeader}>Agenda tu diagnóstico</a>
-
-    <button class={style.hamburger} aria-label="Abrir menú" id="hamburger">
-      <span class={style.h}></span>
-      <span class={style.h}></span>
-      <span class={style.h}></span>
-    </button>
-  </div>
-  <div class={style.mobileMenu} id="mobileMenu">
-    <a class={style.m} href="#services">Servicios</a>
-    <a class={style.m} href="#method">Método</a>
-    <a class={style.m} href="#results">Resultados</a>
-    <a class={style.m} href="#testimonials">Testimonios</a>
-
-    <a class={style.btnMobile}>Agenda tu diagnóstico</a>
   </div>
 </header>
 
-<script is:inline>
-  const hamburger = document.getElementById("hamburger");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  hamburger.addEventListener("click", () => {
-    mobileMenu.classList.toggle("open");
-  });
-</script>
+<script src="/scripts/mobileMenu.js" defer></script>
